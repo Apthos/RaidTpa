@@ -37,7 +37,7 @@ public final class RaidTpa extends JavaPlugin implements Listener {
                     IDs.remove( LID );
                     Bukkit.getScheduler().cancelTask( TASK_ID );
                 } else {
-                    e.getPlayer().getLocation().getWorld().playSound( e.getPlayer().getLocation(), Sound.BLOCK_NOTE_PLING, 1, 1 );
+                    e.getPlayer().getLocation().getWorld().playSound( e.getPlayer().getLocation(), Sound.NOTE_PLING, 1, 1 );
                     IDs.put(LID, new Pair( IDs.get( LID ).getKey(), (int) IDs.get( LID ).getValue() +1 ) );
                 }
 
